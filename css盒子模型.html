@@ -1,0 +1,38 @@
+<!--
+content 内容
+padding 内边距       
+boeder 边框          盒子的边界
+margin 外边距        与其他元素的距离
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css盒子模型</title>
+
+    <style>
+        .demo
+        {
+            background-color: aqua;
+            display: inline-block;
+            border: 59x solid yellowgreen;
+            padding: 50px;
+            margin: 40px;
+        }
+        .demo-border
+        {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            border-style: solid dashed dotted double;
+            border-width: 10px 20px 30px 40px;
+            border-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">这是一个行内块元素示例</div>
+    <div class="demo-border">这是一个块元素示例</div>
+</body>
+</html>
