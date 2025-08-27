@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器综合实例</title>
+    
+    <style>
+    /* 链接伪类 */
+    a:link    { color: blue; }
+    a:visited { color: purple; }
+    a:hover   { color: red; }
+    a:active  { color: green; }
+
+    /* 表单交互 */
+    input:focus   { border: 2px solid skyblue; }
+    input:checked + label { color: orange; font-weight:bold; }
+    button:hover  { background: lightgray; }
+
+    /* 结构伪类 */
+    ul li:first-child { font-weight: bold; }
+    ul li:last-child  { color: gray; }
+    ul li:nth-child(2){ color: darkgreen; }
+
+    /* 否定伪类 */
+    p:not(.highlight) { color: black; }
+    p.highlight       { color: crimson; }
+    </style>
+</head>
+<body>
+
+    <h2>伪类选择器综合演示</h2>
+
+    <a href="#">测试链接</a>
+
+    <ul>
+    <li>第一个项目</li>
+    <li>第二个项目</li>
+    <li>第三个项目</li>
+    </ul>
+
+    <p class="highlight">这段文字被高亮</p>
+    <p>这段文字正常</p>
+
+    <form>
+    <input type="text" placeholder="输入内容试试"><br><br>
+    <input type="checkbox" id="cb1"><label for="cb1">选项一</label><br>
+    <input type="checkbox" id="cb2"><label for="cb2">选项二</label><br><br>
+    <button type="button">提交</button>
+    </form>
+
+</body>
+</html>
